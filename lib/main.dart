@@ -74,12 +74,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.asset(
-                    'assets/images/Logo_CookBook-removebg-preview.png', // Reemplaza con la ruta de tu imagen
-                    height: 50, // Ajusta el tamaño según sea necesario
+                    'assets/images/Logo_CookBook-removebg-preview.png', 
+                    height: 50,
                   ),
                   const SizedBox(height: 8), // Espacio entre la imagen y el texto
                   const Text(
-                    'Footer: © 2024 CookBook Inc.',
+                    '2024 CookBook Inc.',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white),
                   ),
