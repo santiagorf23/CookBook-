@@ -39,7 +39,7 @@ Programación para Dispositivos Móviles
 
 ### Widgets Mínimamente Requeridos
 - Drawer 
-- Scaffold
+- ✅Scaffold
 - Icon
 - Row
 - Column
