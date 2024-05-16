@@ -1,6 +1,6 @@
 # CookBook 📙🥄
 
-![CookBook Logo](link/to/logo.png)
+![CookBook Logo](https://www.canva.com/design/DAGFVRaVa7Y/9wHkEKV2WVE9_lR3fh6VdQ/view?utm_content=DAGFVRaVa7Y&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Descripción del Proyecto
 CookBook es un proyecto final desarrollado en Flutter que utiliza una API externa para ofrecer una amplia base de datos sobre recetas culinarias de todo el mundo.
