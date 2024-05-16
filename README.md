@@ -1,16 +1,52 @@
-# flutter_application_cookbook
+# CookBook 📙🥄
 
-A new Flutter project.
+![CookBook Logo](link/to/logo.png)
 
-## Getting Started
+## Descripción del Proyecto
+CookBook es un proyecto final desarrollado en Flutter que utiliza una API externa para ofrecer una amplia base de datos sobre recetas culinarias de todo el mundo.
 
-This project is a starting point for a Flutter application.
+## Asignatura
+Programación para Dispositivos Móviles
 
-A few resources to get you started if this is your first Flutter project:
+## Integrantes
+### 👩🏻 Mariana Henao Bedoya
+- Código: 1004676093
+- Contacto: [Correo Electrónico](m.henao5@utp.edu.co)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🧒🏻 Santiago Ramírez Flórez
+- Código: 1004777657
+- Contacto: [Correo Electrónico](santiago.ramirez7@utp.edu.co)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologías Utilizadas
+- Dart
+- Flutter
+
+## API Externa
+- [Enlace a la API](https://www.example.com/api)
+
+## Requerimientos del Proyecto
+
+### Diseño
+- Recursos Gráficos (Imágenes, Videos, GIFs, etc.)
+- Responsivo
+- Hacer uso de GIT para presentar el proyecto y evidenciar el trabajo realizado
+- Sistema de Enrutamiento (GoRouter - Navigator)
+- Manejo de Estados (Riverpod - Provider)
+- Peticiones JSON - REST
+- Login (DB Mock o Firebase)
+- Almacenamiento de Datos Locales en el Dispositivo
+- Uso de Arquitectura (Opcional)
+
+### Widgets Mínimamente Requeridos
+- Drawer 
+- Scaffold
+- Icon
+- Row
+- Column
+- Stack
+- TextField
+- Botones
+- Indicadores de Progreso (CircularProgressIndicator - LinearProgressIndicator)
+- BottomNavigationBar - TabBarView
+- ListView
+- Card
