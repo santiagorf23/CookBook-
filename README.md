@@ -12,6 +12,7 @@ Programación para Dispositivos Móviles
 ### 👩🏻 Mariana Henao Bedoya
 - Código: 1004676093
 - Contacto: [Correo Electrónico](m.henao5@utp.edu.co)
+gitgit push
 
 ### 🧒🏻 Santiago Ramírez Flórez
 - Código: 1004777657
