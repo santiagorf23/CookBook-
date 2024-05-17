@@ -5,92 +5,57 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CookBook',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Bienvenido a CookBook'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Row(
+          children: [
+            Image.asset(
+              'assets/images/cookbook_icon.png',
+              height: 40,
+              width: 40,
+            ),
+            const SizedBox(width: 8), // Espacio entre el icono y el título
+            Text(title),
+          ],
+        ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Expanded(
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  const Text(
-                    'You have pushed the button this many times:',
-                  ),
-                  Text(
-                    '$_counter',
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              width: double.infinity,
-              color: Theme.of(context).colorScheme.primary,
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Image.asset(
-                    'assets/images/Logo_CookBook-removebg-preview.png', 
-                    height: 50,
-                  ),
-                  const SizedBox(height: 8), // Espacio entre la imagen y el texto
-                  const Text(
-                    '2024 CookBook Inc.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
+          Text(
+            'Explora un mundo de sabores, donde cada receta es un viaje culinario. Desde platos reconfortantes hasta delicias gourmet, encuentra inspiración para cada ocasión. ¡Sumérgete en el arte de la cocina y crea tus propias obras maestras! Bienvenido a Cookbook: donde los ingredientes se convierten en experiencias inolvidables.',
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const PantallaDeReceta()),
+          );
+        },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
@@ -98,5 +63,18 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+class PantallaDeReceta extends StatelessWidget {
+  const PantallaDeReceta({super.key});
 
-
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Detalle de Receta'),
+      ),
+      body: const Center(
+        child: Text('Aquí va la información de la receta'),
+      ),
+    );
+  }
+}
