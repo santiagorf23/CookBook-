@@ -30,7 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+    http: ^1.2.1  # Para hacer solicitudes HTTP
+  json_annotation: ^4.9.0  # Para la serialización de JSON
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -39,6 +40,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    build_runner: ^2.4.10  # Para la generación de código
+  json_serializable: ^6.8.0  # Para la generación de código JSON
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
